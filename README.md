@@ -31,3 +31,10 @@ This website was built for the Hackettstown Robotics team.
     ```
     npm start
     ```
+
+## GitHub - Commit/Push Code 
+```
+git add .
+git commit -m "init"
+git push
+```
