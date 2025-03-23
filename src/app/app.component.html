@@ -1,0 +1,56 @@
+<ngx-particles [id]="'tsparticles'" [options]="particlesOptions" [particlesInit]="particlesInit"></ngx-particles>
+
+<div class="page-wrapper d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="assets/hhs-brand.png" alt="HHS Robotics" width="40" height="40" />
+      <span class="brand-title">Hackettstown Robotics</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="ms-auto">
+      <button (click)="toggleAudio()" class="audio-toggle">
+        {{ isAudioPlaying ? '🔇 Mute' : '🔊 Play' }}
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Menu -->
+  <div class="main-menu d-flex justify-content-center bg-dark py-2">
+    <a class="menu-link mx-3" routerLink="/" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <a class="menu-link mx-3" routerLink="/about" routerLinkActive="active">About</a>
+    <a class="menu-link mx-3" routerLink="/projects" routerLinkActive="active">Projects</a>
+    <a class="menu-link mx-3" routerLink="/team" routerLinkActive="active">Team</a>
+    <a class="menu-link mx-3" routerLink="/contact" routerLinkActive="active">Contact</a>
+  </div>
+
+  <main class="flex-grow-1">
+    <router-outlet></router-outlet>
+  </main>
+
+  <!-- <footer class="mt-auto">
+    &copy; 2025 HHS Robotics Club. Built with passion and microcontrollers.
+  </footer> -->
+  <footer class="site-footer">
+    <div class="footer-content container text-center">
+      <img src="assets/hhs-tiger.png" alt="Tiger Logo" class="footer-logo mb-2" width="50" />
+      <h5 class="footer-title">Hackettstown High School</h5>
+      <p class="footer-tagline">© 2025 Hackettstown High School. Built with passion and microcontrollers.</p>
+      <p class="footer-links">
+        <a href="/about" class="footer-link">About</a> |
+        <a href="/team" class="footer-link">Team</a> |
+        <a href="/projects" class="footer-link">Projects</a> |
+        <a href="/contact" class="footer-link">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<audio #bgAudio autoplay loop>
+  <source src="assets/digital-future.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>

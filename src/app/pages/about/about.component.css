@@ -1,0 +1,28 @@
+.about-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent black */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #f5f5f5;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #ff6600;
+}
+
+.about-content p {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.frc-logo {
+  max-height: 200px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 102, 0, 0.3);
+}

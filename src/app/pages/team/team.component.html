@@ -1,0 +1,12 @@
+<section class="team-section container my-5">
+  <h2 class="section-title text-center">Meet the Team</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-3 text-center team-card" *ngFor="let team of teams">
+      <div class="team-card-inner">
+        <img src="assets/Nathan.jpg" alt="{{team.firstName}} {{team.lastName}}" class="team-img mb-3">
+        <h5>{{team.firstName}} {{team.lastName}}</h5>
+        <p class="team-role">{{team.role}}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,67 @@
+.contact-info,
+.contact-form,
+.map {
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.02);
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.1);
+}
+
+.contact-info h2,
+.contact-form h3,
+.map h3 {
+  color: #ff6600;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+.contact-info p,
+.contact-form label {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #ff6600;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #e65c00;
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.6);
+}
+
+.map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.1);
+}
