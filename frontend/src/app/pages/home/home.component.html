@@ -1,0 +1,48 @@
+<section class="hero">
+  <img src="assets/HHS-tiger.jpg" alt="Tiger Mascot" class="mascot-hero-img mb-4" />
+  <h1>Building the Future, One Robot at a Time</h1>
+  <p class="lead mt-3">Innovate. Collaborate. Compete.</p>
+  <a href="#" class="btn btn-highlight btn-lg mt-4">Join the Team</a>
+</section>
+
+<section class="container my-5">
+  <h2 class="section-title">Our Capabilities</h2>
+  <div class="row g-4">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card text-white">
+          <h4>Autonomous Coding</h4>
+          <p>We use Python and Java to write AI algorithms that drive our robots with precision.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card text-white">
+          <h4>Mechanical Engineering</h4>
+          <p>Custom-designed chassis, gear systems, and drive trains tailored for every challenge.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card text-white">
+          <h4>Electronics & Wiring</h4>
+          <p>We solder, wire, and integrate sensors and motors with careful attention to detail.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="container my-5">
+  <h2 class="section-title">Meet the Team</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-3 text-center" *ngFor="let team of teams">
+      <img src="assets/Nathan.jpg" alt="Robotics" class="team-img mb-2" />
+      <h5>{{team.firstName}} {{team.lastName}}</h5>
+      <p>{{team.role}}</p>
+    </div>
+  </div>
+</section>
